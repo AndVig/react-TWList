@@ -22,7 +22,7 @@ function LandingPage() {
   }, []);
 
   return (
-    <div>
+    <div className="container">
       <h2>Movies</h2>
       <div className="carousel">
         {movies.map((item) => (

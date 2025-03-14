@@ -1,5 +1,6 @@
 ## TW List
 Progetto personale che si appoggia all'API di movieDB per caricare una lista di film e serie da cui creare una propria lista personale di opere da guardare.
+L'idea è di mantenere il progetto il più ordinato possibile tramite l'uso di componenti riutilizzabili
 ## Tecnologie usate
 Vite+React
 Tailwind

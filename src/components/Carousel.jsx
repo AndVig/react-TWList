@@ -21,12 +21,12 @@ function Carousel({ type, title }) {
 
   return (
     <div className="carousel-container">
-      <h2>{title}</h2>
+      <h2 className='text-center'>{title}</h2>
       <div className="carousel">
         {items.map((item) => (
-          <div key={item.id} className="carousel-item">
-            <img src={`https://image.tmdb.org/t/p/w500${item.poster_path}`} alt={item.title || item.name} />
-            <h3>{item.title || item.name}</h3>
+          <div key={item.id} className="carousel-item ">
+            <img className='h-32 object-scale-down ' src={`https://image.tmdb.org/t/p/w500${item.poster_path}`} alt={item.title || item.name} />
+            <h3 className='py-2'>{item.title || item.name}</h3>
           </div>
         ))}
       </div>

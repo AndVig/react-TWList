@@ -22,7 +22,7 @@ function Carousel({ type, title }) {
   return (
 
     
-    <div className="carousel-container w-screen mt-25">
+    <div className="carousel-container w-screen ">
       <h2 className='text-center'>{title}</h2>
       <div className="carousel">
         {items.map((item) => (

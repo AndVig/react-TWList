@@ -27,10 +27,11 @@ function Card({ item }) {
     <div className={`card ${flipped ? 'flipped' : ''}`} onClick={handleFlip}>
       <div className="card-front">
         <img src={`https://image.tmdb.org/t/p/w500${item.poster_path}`} alt={item.title || item.name} className="card-image" />
-        <div className="card-title">{item.title || item.name}</div>
+        
       </div>
       <div className="card-back">
         <div className="card-info">
+        <div className="card-title">{item.title || item.name}</div>
           <h3>Director: {credits.director}</h3>
           <h4>Cast:</h4>
           <ul>

@@ -4,7 +4,7 @@ import reactLogo from '../assets/react.svg';
 
 function Header() {
   return (
-    <header className="bg-[#242424]  container shadow-md">
+    <header className="bg-[#242424] fixed top-0 w-full container shadow-md">
       <nav className=" mx-auto flex w-screen items-center justify-between p-4">
         <a href="/" className="flex items-center">
           <img src={reactLogo} alt="Logo" className="h-8 w-8 mr-2" />

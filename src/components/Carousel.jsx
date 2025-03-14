@@ -20,13 +20,12 @@ function Carousel({ type, title }) {
   }, [type]);
 
   return (
-    <div className="carousel-container">
+    <div className="carousel-container w-screen">
       <h2 className='text-center'>{title}</h2>
       <div className="carousel">
         {items.map((item) => (
           <div key={item.id} className="carousel-item ">
             <img src={`https://image.tmdb.org/t/p/w500${item.poster_path}`} alt={item.title || item.name} />
-            <h3 className='py-2'>{item.title || item.name}</h3>
           </div>
         ))}
       </div>

@@ -5,8 +5,11 @@ import LandingPage from './LandinPage.jsx'
 import Header from './components/header.jsx'
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
+  <StrictMode >
+    <div className='w-screen'>
     <Header />
     <LandingPage />
+      
+    </div>
   </StrictMode>,
 )

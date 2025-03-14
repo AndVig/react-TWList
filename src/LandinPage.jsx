@@ -22,9 +22,9 @@ function LandingPage() {
   }, []);
 
   return (
-    <div className="container">
+    <div className="container w-screen">
       <h2>Movies</h2>
-      <div className="carousel">
+      <div className="carousel w-screen">
         {movies.map((item) => (
           <div key={item.id} className="carousel-item">
             <img src={`https://image.tmdb.org/t/p/w500${item.poster_path}`} alt={item.title || item.name} />

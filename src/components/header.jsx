@@ -4,8 +4,8 @@ import reactLogo from '../assets/react.svg';
 
 function Header() {
   return (
-    <header className="bg-[#242424] shadow-md">
-      <nav className="container mx-auto flex items-center justify-between p-4">
+    <header className="bg-[#242424] w-screen container shadow-md">
+      <nav className=" mx-auto flex items-center justify-between p-4">
         <a href="/" className="flex items-center">
           <img src={reactLogo} alt="Logo" className="h-8 w-8 mr-2" />
           <span className="text-xl font-bold text-cyan-500">Home</span>
@@ -14,7 +14,7 @@ function Header() {
           <input
             type="text"
             placeholder="Search..."
-            className="px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            className="px-4 py-2 border w-50 md:w-11/12 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
           />
         </div>
       </nav>

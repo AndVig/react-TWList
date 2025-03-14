@@ -25,7 +25,7 @@ function Carousel({ type, title }) {
       <div className="carousel">
         {items.map((item) => (
           <div key={item.id} className="carousel-item ">
-            <img className='h-32 object-scale-down ' src={`https://image.tmdb.org/t/p/w500${item.poster_path}`} alt={item.title || item.name} />
+            <img src={`https://image.tmdb.org/t/p/w500${item.poster_path}`} alt={item.title || item.name} />
             <h3 className='py-2'>{item.title || item.name}</h3>
           </div>
         ))}

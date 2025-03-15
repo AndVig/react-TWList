@@ -1,13 +1,9 @@
-/* .search-container {
-  margin: 2rem;
-} */
-
 .search-input {
   padding: 0.5rem;
-  
   border: 1px solid #ccc;
   border-radius: 4px;
   width: 80%;
+  margin-right: 0.5rem;
   margin-top: 1rem;
   margin-left: 3rem;
 }
@@ -19,6 +15,9 @@
   background-color: #646cff;
   color: #fff;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .search-results {
@@ -26,10 +25,17 @@
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  position: absolute;
+  background-color: cadetblue;
+  overflow: auto;
+  height: 80vh;
+  border-radius: 20px;
+  padding-left: 1rem;
+  padding-top: 1rem;
 }
 
 .search-result-item {
-  width: 150px;
+  width: 200px; /* Imposta la larghezza delle cards */
   text-align: center;
 }
 

@@ -27,7 +27,6 @@ function Carousel({ type, title }) {
       <div className="carousel">
         {items.map((item) => (
           <div key={item.id} className="carousel-item ">
-            {/* <img src={`https://image.tmdb.org/t/p/w500${item.poster_path}`} alt={item.title || item.name} /> */}
             <Card item={item} />
           </div>
         ))}

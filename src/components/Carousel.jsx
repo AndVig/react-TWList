@@ -22,8 +22,8 @@ function Carousel({ type, title }) {
   return (
 
     
-    <div className="carousel-container w-screen ">
-      <h2 className='text-center'>{title}</h2>
+    <div className="carousel-container w-screen mb-5">
+      <h2 className='text-center'>- {title} -</h2>
       <div className="carousel">
         {items.map((item) => (
           <div key={item.id} className="carousel-item ">

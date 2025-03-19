@@ -1,4 +1,4 @@
-import { apiKey } from './keys.js'; // Importa la chiave API
+const apiKey = import.meta.env.VITE_API_KEY; // Legge la chiave API dalla variabile di ambiente
 console.log('API Key:', apiKey); // Aggiungi questo log per verificare la chiave API
 
 const BASE_URL = 'https://api.themoviedb.org/3';

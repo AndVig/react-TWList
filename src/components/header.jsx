@@ -6,7 +6,7 @@ import Search from './Search';
 
 function Header() {
   return (
-    <header className="bg-[#242424] absolute top-0 w-full shadow-md z-50">
+    <header className="bg-[#242424] fixed top-0 w-full shadow-md z-50">
       <nav className="container mx-auto flex items-center justify-between px-5">
         <Link to="/" className="flex items-center">
           <img src={reactLogo} alt="Logo" className="h-8 w-8 mr-2" />

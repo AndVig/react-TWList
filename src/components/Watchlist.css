@@ -1,14 +1,14 @@
 .watchlist-container {
-  margin: 2rem;
+  margin-inline: 2rem;
+  
+  
 }
 
 .watchlist {
+  
   display: flex;
   flex-wrap: wrap;
+  overflow-y: scroll;
   gap: 1rem;
 }
 
-.watchlist-item {
-  width: 200px;
-  text-align: center;
-}

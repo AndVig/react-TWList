@@ -6,11 +6,10 @@ function Watchlist() {
   const { watchlist } = useWatchlist();
 
   return (
-    <div className="watchlist-container">
-      <h2 className="text-center">Watchlist</h2>
-      <div className="watchlist">
+    <div >
+      <div className="watchlist justify-center">
         {watchlist.map((item) => (
-          <div key={item.id} className="watchlist-item">
+          <div key={item.id} >
             <Card item={item} />
           </div>
         ))}

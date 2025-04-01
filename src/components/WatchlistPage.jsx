@@ -4,7 +4,7 @@ import './Watchlist.css';
 
 function WatchlistPage() {
   return (
-    <div className="watchlist-page">
+    <div className="w-screen mt-25">
       <h1 className="text-center">My Watchlist</h1>
       <Watchlist />
     </div>

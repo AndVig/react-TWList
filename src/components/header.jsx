@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../App.css';
-import reactLogo from '../assets/react.svg';
 import Search from './Search';
 
 function Header() {

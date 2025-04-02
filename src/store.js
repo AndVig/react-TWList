@@ -57,3 +57,27 @@ export async function fetchSeriesGenres() {
   }
   return response.json(); // Assumiamo che restituisca un oggetto con `movies` e `series`
 }
+
+export async function fetchMoviesByGenre(genreId) {
+  const url = `${BASE_URL}/discover/movie?api_key=${apiKey}&with_genres=${genreId}&sort_by=popularity.desc`;
+  const response = await fetch(url);
+
+  if (!response.ok) {
+    throw new Error('Failed to fetch movies by genre');
+  }
+
+  const data = await response.json();
+  return data.results || [];
+}
+
+export async function fetchSeriesByGenre(genreId) {
+  const url = `${BASE_URL}/discover/tv?api_key=${apiKey}&with_genres=${genreId}&sort_by=popularity.desc`;
+  const response = await fetch(url);
+
+  if (!response.ok) {
+    throw new Error('Failed to fetch series by genre');
+  }
+
+  const data = await response.json();
+  return data.results || [];
+}

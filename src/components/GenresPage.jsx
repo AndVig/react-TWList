@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { fetchMovieGenres, fetchSeriesGenres, fetchMoviesByGenre, fetchSeriesByGenre } from '../store';
 import { Link } from 'react-router-dom';
+import Card from './Card'; // Importa il componente Card
 
 function normalizeGenreName(name) {
   return name

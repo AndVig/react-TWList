@@ -3,7 +3,10 @@ import { fetchMovieGenres, fetchSeriesGenres } from '../store';
 import { Link } from 'react-router-dom';
 
 function normalizeGenreName(name) {
-  return name.toLowerCase().replace(/ & /g, '-').replace(/\s+/g, '-');
+  return name
+    .toLowerCase()
+    .replace(/ & /g, '-')
+    .replace(/\s+/g, '-');
 }
 
 function GenresPage() {
@@ -34,7 +37,7 @@ function GenresPage() {
       {/* Mosaico per i generi dei film */}
       <div className="genres-section mb-10">
         <h2 className="text-xl text-center font-semibold mb-3">Movie Genres</h2>
-        <div className="flex flex-wrap w-screen justify-center gap-4">
+        <div className="flex flex-wrap gap-4">
           {movieGenres.map((genre) => (
             <Link
               key={genre.id}
@@ -55,7 +58,7 @@ function GenresPage() {
       {/* Mosaico per i generi delle serie TV */}
       <div className="genres-section">
         <h2 className="text-xl text-center font-semibold mb-3">Series Genres</h2>
-        <div className="flex flex-wrap w-screen justify-center gap-4">
+        <div className="flex flex-wrap gap-4">
           {seriesGenres.map((genre) => (
             <Link
               key={genre.id}

@@ -116,15 +116,15 @@ function GenresPage() {
 
       {/* Modale */}
       {isModalOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-20 flex items-center justify-center z-50">
-          <div className="bg-white w-full h-full md:w-3/4 md:h-3/4 rounded-lg overflow-y-auto p-5 relative animate-fade-in">
+        <div className="fixed inset-0 bg-gray-900 flex items-center justify-center z-50">
+          <div className="bg-blue-500 w-full h-full md:w-3/4 md:h-3/4 rounded-lg overflow-y-auto p-5 relative animate-fade-in">
             <button
               onClick={closeModal}
-              className="absolute top-5 right-5 text-white text-xl font-bold"
+              className="fixed top-5 right-5 text-white text-xl font-bold"
             >
               &times;
             </button>
-            <h2 className="text-2xl font-bold mb-5">
+            <h2 className="w-4/5 text-2xl font-bold mb-5">
               Most Popular {modalType === 'movies' ? 'Movies' : 'Series'} in {selectedGenre?.name}
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">

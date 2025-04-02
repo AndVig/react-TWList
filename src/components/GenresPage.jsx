@@ -20,11 +20,11 @@ function GenresPage() {
   }, []);
 
   return (
-    <div className="genres-page container mx-auto p-5">
+    <div className="w-screen mt-25 ">
       <h1 className="text-2xl font-bold text-center mb-5">Genres</h1>
       <div className="genres-section">
-        <h2 className="text-xl font-semibold mb-3">Movie Genres</h2>
-        <ul className="list-disc pl-5">
+        <h2 className="text-xl font-semibold text-center mb-3">Movie Genres</h2>
+        <ul className="list-disc pl-5 justify-center">
           {movieGenres.map((genre) => (
             <li key={genre.id}>
               <Link to={`/movies/genre/${genre.id}`} className="text-cyan-500 hover:underline">
@@ -35,8 +35,8 @@ function GenresPage() {
         </ul>
       </div>
       <div className="genres-section mt-5">
-        <h2 className="text-xl font-semibold mb-3">Series Genres</h2>
-        <ul className="list-disc pl-5">
+        <h2 className="text-xl text-center font-semibold mb-3">Series Genres</h2>
+        <ul className="list-disc pl-5 justify-center">
           {seriesGenres.map((genre) => (
             <li key={genre.id}>
               <Link to={`/series/genre/${genre.id}`} className="text-cyan-500 hover:underline">

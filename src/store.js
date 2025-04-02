@@ -38,9 +38,20 @@ export async function searchItems(query) {
   return data.results;
 }
 
-// Funzione per recuperare i generi di film e serie TV
-export async function fetchGenres() {
-  const response = await fetch('/api/genres'); // Modifica l'endpoint in base alla tua API
+// Funzione per recuperare i generi di film 
+export async function fetchMovieGenres() {
+  const url = `${BASE_URL}/genre/movie/list?api_key=${apiKey}`;// Modifica l'endpoint in base alla tua API
+  const response = await fetch(url);
+  if (!response.ok) {
+    throw new Error('Failed to fetch genres');
+  }
+  return response.json(); // Assumiamo che restituisca un oggetto con `movies` e `series`
+}
+
+// Funzione per recuperare i generi di serie TV
+export async function fetchSeriesGenres() {
+  const url = `${BASE_URL}/genre/tv/list?api_key=${apiKey}`;// Modifica l'endpoint in base alla tua API
+  const response = await fetch(url);
   if (!response.ok) {
     throw new Error('Failed to fetch genres');
   }

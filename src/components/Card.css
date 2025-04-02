@@ -107,3 +107,19 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Riduce l'ombra */
   background-color: #3a45c3; /* Cambia il colore di sfondo */
 }
+
+@media (max-width: 640px) {
+  .card {
+    width: 150px; 
+    height: 225px; 
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .card {
+    width: 160px; 
+    height: 240px; 
+    font-size: 14px;
+  }
+}

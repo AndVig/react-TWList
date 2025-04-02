@@ -12,7 +12,9 @@ function LandingPage() {
     <div className="container w-screen mt-25">
       <Carousel type="movie" title="Movies" />
       <Carousel type="tv" title="Series" />
-      <GenresButton />
+      <div className="flex justify-center mt-10">
+        <GenresButton />
+      </div>
     </div>
   );
 }

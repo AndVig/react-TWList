@@ -7,10 +7,10 @@ function GenresButton() {
   return (
     <button
       onClick={() => navigate('/genres')}
-      className="relative flex items-center bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold py-2 px-6 rounded-full shadow-lg hover:from-cyan-600 hover:to-blue-600 hover:scale-105 transition-transform duration-300 overflow-hidden group"
+      className="relative  flex items-center bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold py-2 px-6 rounded-full shadow-lg hover:from-cyan-600 hover:to-blue-600 hover:scale-105 transition-transform duration-300 overflow-hidden group"
     >
       {/* Effetto di sfumatura animata */}
-      <span className="absolute inset-0 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 opacity-50 blur-lg group-hover:opacity-75 transition-opacity duration-500"></span>
+      <span className="absolute  inset-0 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 opacity-50 blur-lg group-hover:opacity-75 transition-opacity duration-500"></span>
       <span className="relative flex items-center">
         <span className="mr-2">Explore Genres</span>
         <svg

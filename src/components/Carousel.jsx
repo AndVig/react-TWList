@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { fetchMoviesAndSeries } from '../store';
 import Card from './Card';
-
+import "./Carousel.css";
 function Carousel({ type, title }) {
   const [items, setItems] = useState([]);
 
@@ -20,9 +20,9 @@ function Carousel({ type, title }) {
   }, [type]);
 
   return (
-    <div className="mb-5">
+    <div className="w-screen carousel-box mb-5">
       <h2 className="text-center text-2xl font-bold mb-4">- New {title} -</h2>
-      <div className="flex overflow-x-auto scrollbar-hide">
+      <div className="flex overflow-x-auto gap-5 scrollbar-hide ">
         {items.map((item) => (
           <div
             key={item.id}

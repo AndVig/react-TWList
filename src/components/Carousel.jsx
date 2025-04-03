@@ -22,11 +22,11 @@ function Carousel({ type, title }) {
   return (
     <div className="mb-5">
       <h2 className="text-center text-2xl font-bold mb-4">- New {title} -</h2>
-      <div className="flex overflow-x-auto gap-4 scrollbar-hide">
+      <div className="flex overflow-x-auto scrollbar-hide">
         {items.map((item) => (
           <div
             key={item.id}
-            className="flex-shrink-0 w-60 md:w-72 lg:w-80"
+            className=" w-60 md:w-72 lg:w-80"
           >
             <Card item={item} />
           </div>
